@@ -1,0 +1,33 @@
+{
+  "name": "majormilestones",
+  "version": "1.0.0",
+  "description": "Lean-Agile transformation services",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Quintenps/majormilestones.git"
+  },
+  "author": "Quinten Peels",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Quintenps/majormilestones/issues"
+  },
+  "homepage": "https://github.com/Quintenps/majormilestones#readme",
+  "devDependencies": {
+    "css-loader": "^5.0.0",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "mini-css-extract-plugin": "^1.0.0",
+    "node-sass": "^4.14.1",
+    "sass-loader": "^10.0.3",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.1.3",
+    "webpack-cli": "^4.0.0"
+  },
+  "dependencies": {
+    "bulma": "^0.9.1"
+  }
+}

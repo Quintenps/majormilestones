@@ -1,0 +1,108 @@
+@import "~bulma/bulma";
+@import url('https://fonts.googleapis.com/css2?family=Commissioner&display=swap');
+
+$primarycolor: #c6bd00;
+$secondarycolor: #666666;
+
+
+h3 {
+  color: $primarycolor;
+  font-family: 'Commissioner', sans-serif;
+}
+
+.text-intro-section {
+
+  margin: 0 0 45px 0;
+
+  @media only screen and (min-width: 800px) {
+    padding-left: 50px;
+  }
+
+  h5 {
+    color: $secondarycolor;
+  }
+}
+
+.card {
+  background-color: $secondarycolor;
+  color: #FFF;
+
+  h5 {
+    font-weight: 700;
+  }
+}
+
+p.quote {
+  font-style: italic;
+  font-weight: 500;
+  margin: 0 0 25px 0;
+}
+
+.hashtag {
+  font-weight: 600;
+}
+
+.hero {
+  background: url(/img/intro-bg.jpg) no-repeat center bottom;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  .navbar {
+    background: $secondarycolor;
+    border-top: 1px solid $primarycolor;
+
+    .navbar-brand {
+      font-weight: 700;
+    }
+    .navbar-burger {
+      color: #FFF;
+    }
+  }
+
+}
+
+.hero.is-black a.navbar-item:hover, .hero.is-black a.navbar-item.is-active, .hero.is-black .navbar-link:hover, .hero.is-black .navbar-link.is-active {
+  background-color: $primarycolor;
+}
+
+.hero.is-black .navbar-item, .hero.is-black .navbar-link {
+  color: #FFF;
+}
+
+.mm-btn {
+  background-color: $primarycolor;
+  color: $secondarycolor;
+}
+
+section {
+  padding: 100px 0;
+}
+
+section:first-child {
+  padding: 0 0 100px 0;
+}
+
+section:nth-child(even) {
+  background-color: #f2f6fa;
+}
+
+
+section#articles {
+  h5 {
+    font-weight: 500;
+  }
+
+}
+
+section#about {
+  .portfolio-icons {
+    margin-top: 30px;
+  }
+
+  .icon {
+    height: 64px;
+    width: auto;
+  }
+}
