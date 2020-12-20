@@ -4,8 +4,8 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 module.exports = {
     entry: './src/main.js',
     output: {
-        path: path.resolve(__dirname, 'dist'),
-        filename: 'js/bundle.js'
+        path: path.resolve(__dirname, 'public'),
+        filename: 'javascripts/bundle.js'
     },
     module: {
         rules: [{
@@ -28,7 +28,7 @@ module.exports = {
     },
     plugins: [
         new MiniCssExtractPlugin({
-            filename: 'css/style.css'
+            filename: 'stylesheets/majormilestones.css'
         }),
     ]
 };

@@ -1,0 +1,163 @@
+extends layout
+
+block content
+  section#about.section
+    .container
+      .column
+        .text-intro-section
+          h5.is-small.is-uppercase.hashtag # about me
+          h3.is-size-1-tablet.is-size-3-mobile.has-text-weight-semibold.has-text-left.mb-4
+            | Who am I?
+      .columns
+        .column.is-two-thirds-desktop
+          p.is-size-4-tablet.mb-4
+            | I am an all-round seasoned entrepreneur, interim manager and life
+            | coach with 41 completed assignments of which seven permanent
+            | positions and builds over 35 years of experience.
+          p.is-size-5-tablet.mb-4
+            | Originally graduated in Mechanical Engineering and also Business
+            | Economics, later complemented by a Master in Change Management at
+            | the Erasmus University in Rotterdam, as well as a variety of
+            | psychology courses (NLP, Group Dynamic Processes, etc).
+          p.is-size-5-tablet
+            | Founder and CEO of two disruptive online startups, specialized in
+            | Software Development, Lean Startups and also owner of multiple
+            | SAFe certifications. Authorized SAFe trainer.
+          .portfolio-icons
+            img.icon(src='/images/SAFe/spc.png')
+            img.icon(src='/images/SAFe/rte.png')
+            img.icon(src='/images/SAFe/sa.png')
+            img.icon(src='/images/SAFe/pomp.png')
+            img.icon(src='/images/SAFe/lpm.png')
+            img.icon(src='/images/SAFe/sdp.png')
+            img.icon(src='/images/SAFe/msp.png')
+        .column.has-text-centered
+          img.image.is-pulled-right.about.is-hidden-touch(src='/images/AA_MGL4004def.png')
+  section#services.section
+    .container
+      .text-intro-section
+        h5.is-small.is-uppercase.hashtag # services
+        h3.is-size-1-tablet.is-size-3-mobile.has-text-weight-semibold.has-text-left.mb-4
+          | Services that I offer
+      .columns
+        .column.is-one-third-desktop
+          .card
+            .card-content.has-text-centered
+              i.far.fa-building
+              h5.is-capitalized POC/MVP Lean Startup development
+        .column.is-one-third-desktop
+          .card
+            .card-content.has-text-centered
+              i.fas.fa-chalkboard-teacher
+              h5.is-capitalized
+                | SAFe Framework Implementation (SPC)
+        .column.is-one-third-desktop
+          .card
+            .card-content.has-text-centered
+              i.fas.fa-tasks
+              h5 Facilitating, coaching and executing ART’s (RTE)
+      .columns
+        .column.is-one-third-desktop
+          .card
+            .card-content.has-text-centered
+              i.fas.fa-chalkboard-teacher
+              h5 Lean Portfolio Management (LPM)
+        .column.is-one-third-desktop
+          .card
+            .card-content.has-text-centered
+              i.fas.fa-chalkboard-teacher
+              h5 DevOps implementations (SDP)
+        .column.is-one-third-desktop
+          .card
+            .card-content.has-text-centered
+              i.fas.fa-chalkboard-teacher
+              h5 Agile Coaching
+      .columns
+        .column.is-one-third-desktop
+          .card
+            .card-content.has-text-centered
+              i.far.fa-chart-bar
+              h5 Metrics & Auditing
+        .column.is-one-third-desktop
+          .card
+            .card-content.has-text-centered
+              i.fas.fa-book
+              h5 SAFe training
+  section#testimonial.section
+    .container
+      .text-intro-section
+        h5.is-small.is-uppercase.hashtag # people
+        h3.is-size-1-tablet.is-size-3-mobile.has-text-weight-semibold.has-text-left.mb-4
+          | Happy customers
+      .columns
+        .column.has-text-centered
+          p.quote
+            | “Jij nogmaals dank voor de twee inspirerende dagen en de goede
+            | uitleg”
+          blockquote - Tessa K
+        .column.has-text-centered
+          p.quote
+            | “Wow, wat heb jij enorm uitvoerig mijn vragen beantwoord. Enorm
+            | bedankt daarvoor”
+          blockquote - Arnoud V
+        .column.has-text-centered
+          p.quote
+            | “Roel is highly inspirational with his enthusiastic personality”
+          blockquote - Yosha H
+        .column.has-text-centered
+          p.quote
+            | “Roel is also really helping and putting effort in his students to
+            | pass the exam”
+          blockquote - Martine Z
+  section#articles.section
+    .container
+      .text-intro-section
+        h5.is-small.is-uppercase.hashtag # publishes
+        h3.is-size-1-tablet.is-size-3-mobile.has-text-weight-semibold.has-text-left.mb-4
+          | Articles that I wrote
+      .columns
+        .column
+          a(href='https://www.linkedin.com/pulse/agile-leadership-wat-dat-eigenlijk-roel-peels/')
+            h5.is-size-4.has-text-centered-mobile
+              | Agile Leadership – Wat is dat eigenlijk?
+        .column.has-text-centered
+          p 3 Oct 2020
+          p Agile Leadership
+      .columns
+        .column
+          a(href='https://www.linkedin.com/pulse/safe50-strategic-themes-okrs-roel-peels/')
+            h5.is-size-4.has-text-centered-mobile
+              | SAFe®5.0: Strategic Themes & OKR's
+        .column.has-text-centered
+          p 26 Nov 2019
+          p How to define OKR’s
+      .columns
+        .column.has-text-centered-mobile
+          a(href='https://www.linkedin.com/pulse/software-ontwikkelingscontracten-bespaar-geld-en-vermijdt-roel-peels/')
+            h5.is-size-4
+              | Software Ontwikkelingscontracten: bespaar geld en vermijd
+              | discussies.
+        .column.has-text-centered
+          p 28 April 2018
+          p Agile Software Development contracts
+      .columns
+        .column
+          a(href='https://www.linkedin.com/pulse/voor-10k-een-app-bouwen-kan-dat-roel-peels/')
+            h5.is-size-4.has-text-centered-mobile
+              | Voor €10k een app bouwen: Kan dat?
+        .column.has-text-centered
+          p 28 Oct 2018
+          p Tip how to build an App
+      .columns
+        .column
+          a(href='https://www.linkedin.com/pulse/ik-ben-release-train-engineer-en-dit-wat-doe-roel-peels')
+            h5.is-size-4.has-text-centered-mobile
+              | Ik ben Release Train Engineer, en dit is wat ik doe…
+        .column.has-text-centered
+          p 12 Dec 2018
+          p I am a Release Train Engineer
+      .columns
+        .column.has-text-centered.mt-6
+          a.button.mm-btn(href='https://www.linkedin.com/in/roelpeels/detail/recent-activity/posts/')
+            | Read more
+            | at my LinkedIn

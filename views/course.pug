@@ -1,0 +1,104 @@
+extends layout
+
+block content
+  section#course.section
+      .container
+        .text-intro-section
+          h5.is-small.is-uppercase.hashtag # course
+          h3.is-size-1-tablet.is-size-3-mobile.has-text-weight-semibold.has-text-left.mb-4
+            | SAFe Course registration
+          p.is-size-5-tablet
+            | Signup directly to enroll in my SAFe classroom
+        form(action='https://crm.zoho.com/crm/WebToContactForm' name='WebToContacts306511000017012034' method='POST' onsubmit='javascript:document.charset="UTF-8"; return checkMandatory306511000017012034()' accept-charset='UTF-8')
+          input(type='text' style='display:none;' name='xnQsjsdp' value='e619f697e68aa4defb16a1e6aa9d6bb4df8c3b19bbb4d4ba61fff16c35f64aac')
+          input#zc_gad(type='hidden' name='zc_gad' value='')
+          input(type='text' style='display:none;' name='xmIwtLD' value='53f059b1ead58a7cc70281c1d6a5f4f63920807380260e9bbcca3f8c50903556')
+          input(type='text' style='display:none;' name='actionType' value='Q29udGFjdHM=')
+          input(type='text' style='display:none;' name='returnURL' value='https://www.majormilestones.nl')
+          .columns
+            .column
+              h3.is-size-3 Company
+            .column
+              .column
+                .field
+                  label.label.has-text-weight-medium Company name
+                  .control
+                    input#Account_Name.input(type='text' name='Account Name' maxlength='100')
+              .column
+                .field
+                  label.label.has-text-weight-medium Job Title
+                  .control
+                    input#CONTACTCF5.input(type='text' name='CONTACTCF5' maxlength='40')
+          hr
+          .columns
+            .column
+              h3.is-size-3 Personal
+            .column
+              .columns.px-3
+                .column
+                  .field
+                    label.label.has-text-weight-medium First name
+                    .control
+                      input#First_Name.input(type='text' name='First Name' maxlength='40')
+                .column
+                  .field
+                    label.label.has-text-weight-medium Last name
+                    .control
+                      input#Last_Name.input(type='text' name='Last Name' maxlength='80')
+              .column
+                .field
+                  label.label.has-text-weight-medium Email
+                  .control
+                    input#Email.input(type='text' ftype='email' name='Email' maxlength='100')
+              .column
+                .field
+                  label.label.has-text-weight-medium Mobile
+                  .control
+                    input#Mobile.input(type='text' name='Mobile' maxlength='30')
+              .column
+                .field
+                  label.label.has-text-weight-medium SAFe cursist
+                  .control
+                    input#CONTACTCF241.zcwf_ckbox(type='checkbox' name='CONTACTCF241' maxlength='3' checked='true')
+          hr
+          .columns
+            .column
+              h3.is-size-3 Invoice
+            .column
+              .columns.px-3
+                .column
+                  .field
+                    label.label.has-text-weight-medium Street + number
+                    .control
+                      input#Mailing_Street.input(type='text' name='Mailing Street' maxlength='250')
+                .column
+                  .field
+                    label.label.has-text-weight-medium Zip code
+                    .control
+                      input#Mailing_Zip.input(type='text' name='Mailing Zip' maxlength='30')
+              .column
+                .field
+                  label.label.has-text-weight-medium City
+                  .control
+                    input#Mailing_City.input(type='text' name='Mailing City' maxlength='100')
+          hr
+          .columns
+            .column
+              h3.is-size-3 Other
+            .column
+              .column
+                .field
+                  label.label.has-text-weight-medium
+                    | Personal note (Diet wishes,
+                    | accessibility, other)
+                  .control
+                    textarea#Description.input(name='Description')
+          .columns
+            .column.is-4.is-offset-8
+              input#formsubmit.formsubmit.zcwf_button.button.is-success(type='submit' value='Submit' title='Submit')
+              input.zcwf_button.button.is-dark(type='reset' name='reset' value='Reset' title='Reset')
+
+      script#form(src='/javascripts/zoho/form.js')
+      script#wf_anal(src='https://crm.zohopublic.com/crm/WebFormAnalyticsServeServlet?rid=53f059b1ead58a7cc70281c1d6a5f4f63920807380260e9bbcca3f8c50903556gide619f697e68aa4defb16a1e6aa9d6bb4df8c3b19bbb4d4ba61fff16c35f64aacgid5cf99212d7958dbcd176c761c6ce0a4d7e43e277bdc5d8b9c12010015418942cgid14f4ec16431e0686150daa43f3210513')
+
+          
