@@ -6,8 +6,8 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Lean-Agile transformation services', homepage: true });
 });
 
-router.get('/course', function(req, res, next) {
-  res.render('course', { title: 'Course Signup' });
+router.get('/register', function(req, res, next) {
+  res.render('register', { title: 'Course registration' });
 });
 
 module.exports = router;
