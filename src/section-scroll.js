@@ -5,6 +5,10 @@ for (const link of links) {
 }
 
 function clickHandler(e) {
+    const element = e.srcElement
+    if(element.className === "navbar-item out"){
+        return;
+    }
     e.preventDefault();
     const href = this.getAttribute("href");
     const offsetTop = document.querySelector(href).offsetTop - 50;
