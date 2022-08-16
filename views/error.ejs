@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html class="has-navbar-fixed-top">
+
+<%- include('layouts/header'); %>
+
+  <section class="hero is-black is-medium" id="home">
+    <div class="hero-head">
+      <nav class="navbar is-fixed-top">
+        <div class="container">
+          <div class="navbar-brand"><a class="navbar-item out" href="/"> Major Milestones B.V.</a><span
+              class="navbar-burger burger" data-target="navbarMenuHeroA"><span></span><span></span><span></span></span>
+          </div>
+          <div class="navbar-menu" id="navbarMenuHeroA">
+            <div class="navbar-end">
+              <a class="navbar-item" href="/"> Homepage </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </section>
+
+  <section class="section" id="about">
+    <div class="container">
+      <div class="column">
+        <h1 class="is-size-3">
+          <%- error.status %>
+        </h1>
+        <h3 class="is-size-5"><%- message %></h3>
+      </div>
+    </div>
+  </section>
+
+  <%- include('layouts/footer'); -%>
+    </body>
+
+    <script src="/javascripts/bundle.js"></script>
+
+</html>
