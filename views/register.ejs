@@ -31,19 +31,39 @@
           <p class="is-size-5-tablet">Signup directly to enroll in my SAFe classroom</p>
         </div>
         <div class="column">
-          <div class="is-flex is-flex-direction-column is-align-items-center is-justify-content-center">
-            <a href="https://survey.zohopublic.com/zs/vHCNXE" class="button is-large is-vcentered">
-              <span class="icon is-medium">
-                <img src="/images/onlyonce_icon.jpg" class="image is-4by2">
-              </span>
-              <span class="ml-2">Fill form using OnlyOnce</span>
-              </button>
-            </a>
-        </div>
+          <div id="select-form">
+            <div class="is-flex is-flex-direction-column is-align-items-center is-justify-content-center">
+              <a onclick="showOOForm()" class="button mb-4 is-vcentered">
+                <span class="icon is-medium">
+                  <img src="/images/onlyonce_icon.jpg" class="image is-4by2">
+                </span>
+                <span class="ml-2">Fill form using OnlyOnce</span>
+                </button>
+              </a>
+            </div>
+            <div class="divider">OR</div>
+            <div class="is-flex is-flex-direction-column is-align-items-center is-justify-content-center">
+              <a onclick="showManualForm()"
+                class="button  is-vcentered">
+                <span class="ml-2">Fill form manually</span>
+                </button>
+              </a>
+            </div>
+          </div>
+
+          <div class="select" id="oo-form" style="display:none;">
+            <select onchange="redirectOOForm(this.value)">
+              <option selected value="">-- Select your form --</option>
+              <option value="https://forms.onlyonce.com/DataResponse/VerifyUser?dataRequester=+31651570496&formType=minimalForm">Minimal information</option>
+              <option value="https://forms.onlyonce.com/DataResponse/VerifyUser?dataRequester=+31651570496&formType=standardPersonalBusinessCard">Standard personal business card</option>
+              <option value="https://forms.onlyonce.com/DataResponse/VerifyUser?dataRequester=+31651570496&formType=supplierSignContractCard">Supplier sign contract</option>
+              <option value="https://forms.onlyonce.com/DataResponse/VerifyUser?dataRequester=+31651570496&formType=standardBusinessCard">Standard business card</option>
+            </select>
+          </div>
         </div>
       </div>
     </div>
-    <form action="https://crm.zoho.com/crm/WebToContactForm" name="WebToContacts306511000017012034" method="POST" onsubmit="javascript:document.charset=&quot;UTF-8&quot;; return checkMandatory306511000017012034()" accept-charset="UTF-8">
+    <form style="display:none" id="manual-form" action="https://crm.zoho.com/crm/WebToContactForm" name="WebToContacts306511000017012034" method="POST" onsubmit="javascript:document.charset=&quot;UTF-8&quot;; return checkMandatory306511000017012034()" accept-charset="UTF-8">
       <input type="text" style="display:none;" name="xnQsjsdp" value="e619f697e68aa4defb16a1e6aa9d6bb4df8c3b19bbb4d4ba61fff16c35f64aac"/>
       <input id="zc_gad" type="hidden" name="zc_gad" value=""/>
       <input type="text" style="display:none;" name="xmIwtLD" value="53f059b1ead58a7cc70281c1d6a5f4f63920807380260e9bbcca3f8c50903556"/>
@@ -191,5 +211,28 @@
 <%- include('layouts/footer'); -%>
 </body>
 
+<script>
+  function showManualForm(){
+    var selectform = document.getElementById("select-form");
+    var manualform = document.getElementById("manual-form");
+    selectform.style.display = 'none';
+    manualform.style.display = 'block';
+  }
+
+  function showOOForm(){
+    var selectform = document.getElementById("select-form");
+    var onlyonceform = document.getElementById("oo-form");
+    selectform.style.display = 'none';
+    onlyonceform.style.display = 'block';
+  }
+
+  function redirectOOForm(val){
+    if(val == ""){
+      return
+    }
+
+    window.location.href = val;
+  }
+</script>
 <script src="/javascripts/bundle.js"></script>
 </html>
