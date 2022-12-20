@@ -10,6 +10,32 @@ h3 {
   font-family: "Commissioner", sans-serif;
 }
 
+.onlyonce-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 30px;
+  gap: 10px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 20px;
+  cursor: pointer;
+  max-width: fit-content;
+
+  background: #E9EDEF;
+  border: 1px solid #A2A9AF;
+  border-radius: 10px;
+}
+
+.onlyonce-button:hover {
+  background: #FBFEFF;
+}
+
+.onlyonce-button:active {
+  background: #DDEFF8;
+}
+
 .text-intro-section {
   margin: 0 0 45px 0;
 
