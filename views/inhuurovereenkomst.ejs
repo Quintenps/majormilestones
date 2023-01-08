@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html class="has-navbar-fixed-top">
+
+<%- include('layouts/header'); -%>
+
+    <section class="hero is-black is-medium" id="home">
+        <div class="hero-head">
+            <nav class="navbar is-fixed-top">
+                <div class="container">
+                    <div class="navbar-brand"><a class="navbar-item out" href="/"> Major Milestones B.V.</a><span
+                            class="navbar-burger burger"
+                            data-target="navbarMenuHeroA"><span></span><span></span><span></span></span>
+                    </div>
+                    <div class="navbar-menu" id="navbarMenuHeroA">
+                        <div class="navbar-end">
+                            <a class="navbar-item out" href="/"> Homepage </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </section>
+
+    <section class="section" id="course">
+        <div class="container">
+            <form id="manual-form" method="POST">
+                <div class="is-flex is-flex-direction-column">
+                    <h3 class="is-size-3">Gegevens Opdrachtuitvoerder</h3>
+                    <% const x=['Voorletters en achternaam', 'Voornaam' , 'Adres + huisnummer + evt. toevoeging'
+                        , 'Postcode + woonplaats' , 'Nationaliteit' , 'Burger Service Nummer'
+                        , 'Soort Identiteitsbewijs (Pasp./ID-Kaart)' , 'Identiteitsbewijs nummer'
+                        , 'Vervaldatum Identiteitsbewijs' , 'Geboortedatum ' , 'E-mailadres' , 'Mobiel nummer' ] %>
+                        <% for(var i=0; i < x.length; i++) { %>
+                            <div class="my-2">
+                                <div class="field">
+                                    <label class="label has-text-weight-medium">
+                                        <%= x[i] %>
+                                    </label>
+                                    <div class="control">
+                                        <input class="input" type="text" maxlength="100" />
+                                    </div>
+                                </div>
+                            </div>
+                            <% } %>
+
+                            <h3 class="is-size-3 mt-6">Gegevens Opdrachtnemer (vanuit welke KvK worden facturen verstuurd)</h3>
+                    <% const y=['Is inhuurkracht in loondienst bij  onderstaand bedrijf of zelfstandig?', 'Kamer van koophandel nummer' , 'Adres + huisnummer + evt. toevoeging'
+                        , 'Bedrijfsnaam' , 'Adres + huisnummer + evt. toevoeging' , 'Postcode + woonplaats'
+                        , 'Telefoonnummer' , 'Naam contactpersoon'
+                        , 'E-mailadres conctactpersoon' , 'Naam tekenbevoegde ' , 'E-Functie tekenbevoegde' , 'Omzetbelastingnummer', 'IBAN nummer', 'BIC-Code', 'Tenaamstelling IBAN Bank/Giro', 'IBAN nummer G-rekening', 'Nen verklaring' ] %>
+                        <% for(var i=0; i < y.length; i++) { %>
+                            <div class="my-2">
+                                <div class="field">
+                                    <label class="label has-text-weight-medium">
+                                        <%= y[i] %>
+                                    </label>
+                                    <div class="control">
+                                        <input class="input" type="text" maxlength="100" />
+                                    </div>
+                                </div>
+                            </div>
+                            <% } %>
+                            <button class="button is-primary">Submit</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+
+    <%- include('layouts/footer'); -%>
+        </body>
+
+        <script src="/javascripts/bundle.js"></script>
+        <script async defer src="https://buttons.onlyonce.com/script.js"></script>
+
+</html>

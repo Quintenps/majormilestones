@@ -14,4 +14,9 @@ router.get('/register', function(req, res, next) {
   res.render('register', { title: 'Course registration' });
 });
 
+router.get('/inhuurovereenkomst', function(req, res, next) {
+  res.render('inhuurovereenkomst', { title: 'inhuurovereenkomst' });
+});
+
+
 module.exports = router;
